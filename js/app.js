@@ -66,7 +66,7 @@ for(var i=0;i<3;i++){
     allEnemies.push(enemies);
 }
 // Place the player object in a variable called player
-
+var player = new Player(200,400);
 
 
 // This listens for key presses and sends the keys to your
