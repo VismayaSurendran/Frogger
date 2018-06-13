@@ -164,3 +164,7 @@ var Heart= function(x,y){
     this.sprite='images/Heart.png';
 
 }
+
+Heart.prototype.render=function(){
+    ctx.drawImage(Resources.get(this.sprite),this.x,this.y);
+ };
