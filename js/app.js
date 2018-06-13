@@ -44,21 +44,27 @@ Player.prototype.render = function() {
 };
 Player.prototype.update= function(){
     
-    
+    //check if lives=0
     if (this.lives === 0) {
     
-    over();
+    over(); //game over
     }
     if(this.score===50){
-        won();
+        won(); //game won
     }
 };
-// This class requires an update(), render() and
-// a handleInput() method.
+
 
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
+var allEnemies=[];
+var speedX=60;
+for(var i=0;i<3;i++){
+    var bugSpeed=speedX*Math.floor(Math.random()*10+1);
+    var enemies= new Enemy(-100,50+(90*i),bugSpeed);
+    allEnemies.push(enemies);
+}
 // Place the player object in a variable called player
 
 
