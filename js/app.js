@@ -168,3 +168,6 @@ var Heart= function(x,y){
 Heart.prototype.render=function(){
     ctx.drawImage(Resources.get(this.sprite),this.x,this.y);
  };
+
+ var heart = new Heart (101 * Math.floor(Math.random() * 4) + 0, 55 +
+    (90 * Math.floor(Math.random() * 3) + 0));
