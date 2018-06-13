@@ -157,21 +157,30 @@ Enemy.prototype.collision=function(){
     }
 }
 
-
+//heart for earning lives
 var Heart= function(x,y){
     this.x=x;
     this.y=y;
     this.sprite='images/Heart.png';
 
 }
-
+//drawing the heart
 Heart.prototype.render=function(){
     ctx.drawImage(Resources.get(this.sprite),this.x,this.y);
  };
-
+//random positioning
  var heart = new Heart (101 * Math.floor(Math.random() * 4) + 0, 55 +
     (90 * Math.floor(Math.random() * 3) + 0));
 
 Heart.prototype.update=function(){
-    this.collision();
+    this.collision(); //check for collision with player
  };
+
+ Heart.prototype.collision=function(){
+    if((player.x < this.x + 60) && (player.x + 50 > this.x) && (player.y < this.y + 70) && (player.y+40 > this.y)){
+        player.lives++;        
+        this.x=(101 * Math.floor(Math.random() * 4) + 0);
+        this.y=(55 + (90 * Math.floor(Math.random() * 3) + 0));
+    }
+
+ }
