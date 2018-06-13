@@ -13,6 +13,11 @@ function over(){
     gameWon.classList.add("show");
 }
 
+function playAgain(){
+    window.location.reload();
+    gameOver.classList.remove("show");
+ }
+
 
 
 
