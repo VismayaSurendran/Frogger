@@ -117,3 +117,11 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+Enemy.prototype.collision=function(){
+    if((player.x < this.x + 60) && (player.x + 50 > this.x) && (player.y < this.y + 70) && (player.y+40 > this.y)){
+        player.lives--; 
+        player.initialPos();   
+
+    }
+}
