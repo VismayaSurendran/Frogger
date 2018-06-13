@@ -49,3 +49,13 @@ body {
 button{
 	cursor: pointer;
 }
+
+.hide {
+	display: none;
+	opacity: 0 !important;
+}
+
+.show {
+	display: inline-block; !important;
+	opacity: 1 !important;
+}
