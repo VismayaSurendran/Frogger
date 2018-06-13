@@ -42,6 +42,17 @@ Player.prototype.render = function() {
     ctx.font="18px Arial";    
     
 };
+Player.prototype.update= function(){
+    
+    
+    if (this.lives === 0) {
+    
+    over();
+    }
+    if(this.score===50){
+        won();
+    }
+};
 // This class requires an update(), render() and
 // a handleInput() method.
 
