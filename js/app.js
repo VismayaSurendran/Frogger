@@ -37,9 +37,9 @@ var Player=function(x,y){
 
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-    ctx.fillText("Lives: " + player.lives, 23, 95);
-    ctx.fillText("Score: " + player.score, 218, 95);    
-    ctx.fillText("LevelUp: " + speedX, 375, 95);
+    ctx.fillText("Lives: " + player.lives, 23, 95); //no.of lives remaining
+    ctx.fillText("Score: " + player.score, 218, 95);  //player scoreboard  
+    ctx.fillText("LevelUp: " + speedX, 375, 95); //difficulty level
     ctx.font="18px Arial";    
     
 };
@@ -117,7 +117,7 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
-
+//collision detection
 Enemy.prototype.collision=function(){
     if((player.x < this.x + 60) && (player.x + 50 > this.x) && (player.y < this.y + 70) && (player.y+40 > this.y)){
         player.lives--; 
