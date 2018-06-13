@@ -67,6 +67,13 @@ for(var i=0;i<3;i++){
 }
 // Place the player object in a variable called player
 var player = new Player(200,400);
+Player.prototype.initialPos = function() {
+    
+    this.xCor = 200;
+    this.yCor = 400;
+    this.x = this.xCor;
+    this.y = this.yCor;
+};
 
 
 // This listens for key presses and sends the keys to your
