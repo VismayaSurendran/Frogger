@@ -19,7 +19,7 @@ function playAgain(){
     window.location.reload();
     gameOver.classList.remove("show");
  }
- 
+
  function onceMore(){
     window.location.reload();
     gameWon.classList.remove("show");
@@ -155,4 +155,12 @@ Enemy.prototype.collision=function(){
         player.initialPos();   
 
     }
+}
+
+
+var Heart= function(x,y){
+    this.x=x;
+    this.y=y;
+    this.sprite='images/Heart.png';
+
 }
