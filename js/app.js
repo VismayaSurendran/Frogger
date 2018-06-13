@@ -1,3 +1,12 @@
+let gameInit=document.querySelector(".gameInit");
+let gameWon=document.querySelector(".gameWon");
+let gameOver=document.querySelector(".gameOver");
+let wonButton=document.querySelector(".wonButton");
+
+function start(){
+    gameInit.classList.add("hide");    
+}
+
 // Enemies our player must avoid
 var Enemy = function(x,y,speed) {
     this.x=x;
