@@ -30,3 +30,18 @@ body {
     display: none;
   
 }
+
+.gameWon{
+	text-align: center;
+	background-image: url("bgimg2.png");
+    width: 512px;
+    height: 560px;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: none;
+  
+}
