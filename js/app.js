@@ -33,6 +33,15 @@ var Player=function(x,y){
     this.score=0;
     this.lives=3
 }
+
+Player.prototype.render = function() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    ctx.fillText("Lives: " + player.lives, 23, 95);
+    ctx.fillText("Score: " + player.score, 218, 95);    
+    ctx.fillText("LevelUp: " + speedX, 375, 95);
+    ctx.font="18px Arial";    
+    
+};
 // This class requires an update(), render() and
 // a handleInput() method.
 
