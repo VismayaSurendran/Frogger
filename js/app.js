@@ -9,6 +9,9 @@ function start(){
 function over(){     
      gameOver.classList.add("show");
  }
+ function won(){    
+    gameWon.classList.add("show");
+}
 
 
 
