@@ -16,6 +16,7 @@ Enemy.prototype.update = function(dt) {
         //for random position
         this.speed=speedX*Math.floor(Math.random()*10+1);
     }
+    this.collision();
     
 };
 
