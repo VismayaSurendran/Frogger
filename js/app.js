@@ -6,9 +6,11 @@ let wonButton=document.querySelector(".wonButton");
 function start(){
     gameInit.classList.add("hide");    
 }
+
 function over(){     
      gameOver.classList.add("show");
  }
+
  function won(){    
     gameWon.classList.add("show");
 }
@@ -17,6 +19,12 @@ function playAgain(){
     window.location.reload();
     gameOver.classList.remove("show");
  }
+ 
+ function onceMore(){
+    window.location.reload();
+    gameWon.classList.remove("show");
+ }
+
 
 
 
