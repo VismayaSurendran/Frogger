@@ -78,6 +78,34 @@ Player.prototype.initialPos = function() {
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
+Player.prototype.handleInput=function(pressedKey){
+    if(pressedKey=='left'){
+        if(this.x>0){
+            this.x-=101;
+        }
+    }
+    else if(pressedKey=='right'){
+        if(this.x<400){
+            this.x+=101;
+        }
+    }
+    else if(pressedKey=='up'){
+        if(this.y<0){
+
+        this.score=this.score+5;
+        speedX=speedX+5; 
+        this.initialPos()           
+        }
+        else{
+            this.y-=85;
+        }
+    }
+    else if(pressedKey=='down'){
+        if(this.y<400){
+            this.y+=85;
+        }
+    }
+};
 document.addEventListener('keyup', function(e) {
     var allowedKeys = {
         37: 'left',
