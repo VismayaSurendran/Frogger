@@ -175,7 +175,7 @@ Heart.prototype.render=function(){
 Heart.prototype.update=function(){
     this.collision(); //check for collision with player
  };
-
+//check for collision & update position
  Heart.prototype.collision=function(){
     if((player.x < this.x + 60) && (player.x + 50 > this.x) && (player.y < this.y + 70) && (player.y+40 > this.y)){
         player.lives++;        
