@@ -6,6 +6,12 @@ let wonButton=document.querySelector(".wonButton");
 function start(){
     gameInit.classList.add("hide");    
 }
+function over(){     
+     gameOver.classList.add("show");
+ }
+
+
+
 
 // Enemies our player must avoid
 var Enemy = function(x,y,speed) {
