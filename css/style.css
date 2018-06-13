@@ -2,3 +2,16 @@ body {
     text-align: center;
     background-image: url("bgimg.jpg");
 }
+.gameInit{
+	position: absolute;
+	background-image: url("bgimg1.jpg");
+	border-radius: 8px; 
+    left: 0;
+    right: 0;
+    top: 50px;
+    width: 515px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 1em 2em;
+    transition-duration: 4s;
+}
