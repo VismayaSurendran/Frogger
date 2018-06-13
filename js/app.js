@@ -171,3 +171,7 @@ Heart.prototype.render=function(){
 
  var heart = new Heart (101 * Math.floor(Math.random() * 4) + 0, 55 +
     (90 * Math.floor(Math.random() * 3) + 0));
+
+Heart.prototype.update=function(){
+    this.collision();
+ };
