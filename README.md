@@ -1,4 +1,4 @@
-				#Frogger
+		#Frogger
 
 HOW TO PLAY:
 
